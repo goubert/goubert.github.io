@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.833" height="24.406" viewBox="0 0 64.833 24.406">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#0665ef}
+        </style>
+    </defs>
+    <g id="prefix__Grupo_3" data-name="Grupo 3" transform="translate(-2360.068 -3261.304)">
+        <g id="prefix__Grupo_2" data-name="Grupo 2" transform="translate(2360.068 3261.304)">
+            <path id="prefix__Caminho_8" d="M2486.853 3261.3a8.754 8.754 0 1 0 9.144 8.746 8.952 8.952 0 0 0-9.144-8.746zm0 13.106a4.36 4.36 0 1 1 4.361-4.36 4.36 4.36 0 0 1-4.361 4.364z" class="prefix__cls-1" data-name="Caminho 8" transform="translate(-2457.944 -3261.304)"/>
+            <path id="prefix__Caminho_9" d="M2615.542 3278.51c-1.805-.022-2.045-1.134-1.974-2.928v-9.634h-4.717l-.071 9.715c-.048 3.09-6.1 4.2-6.1-.249l-.089-9.466h-4.717l.075 9.776c.048 3.73 1.6 7 6.178 7 4.653 0 5.09-2.448 5.09-2.448.63 2.181 3.586 2.738 6.35 2.132-.001-2.444-.025-3.898-.025-3.898z" class="prefix__cls-1" data-name="Caminho 9" transform="translate(-2557.919 -3265.167)"/>
+            <path id="prefix__Caminho_10" d="M2377.927 3278v-14.2h-4.718l.03 2.033c-.964-1.363-2.612-2.266-5.426-2.266-4.277 0-7.745 3.769-7.745 8.418s3.468 8.418 7.745 8.418c2.956 0 4.655-.766 5.613-2.21.564 6.284-6.66 6.361-9.994 3.588-.6.832-2.272 3.446-2.272 3.446 3.421 3.297 17.207 4.879 16.767-7.227zm-8.7-1.771a4.146 4.146 0 1 1 4.265-4.144 4.206 4.206 0 0 1-4.267 4.147z" class="prefix__cls-1" data-name="Caminho 10" transform="translate(-2360.068 -3263.189)"/>
+        </g>
+        <circle id="prefix__Elipse_2" cx="2.489" cy="2.489" r="2.489" class="prefix__cls-1" data-name="Elipse 2" transform="translate(2419.924 3273.943)"/>
+    </g>
+</svg>
