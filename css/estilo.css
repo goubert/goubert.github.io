@@ -156,13 +156,15 @@ header .lottie{
     animation: slideIn 200ms;
 }
 
-section.texto-sobremim{
+section{
     flex-direction: row;
     margin-bottom: 40px;
     flex-wrap: nowrap;
     animation: slideIn 350ms;
 }
-section.texto-sobremim p{
+
+
+section p{
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 200;
@@ -170,28 +172,28 @@ section.texto-sobremim p{
     text-align: left;
     color: #848484;
 }
-section.texto-sobremim h4{
+section h4{
     font-size: 18px;
     font-weight: bold;
     color: #0665ef;
     margin: 40px 0px 0 0;
 }   
-section.texto-sobremim ul{
+section ul{
     margin: 20px 0px;
     color: #848484;
 }
 
-section.texto-sobremim ul li{
+section ul li{
     margin: 20px 0;
 }
 
-section.texto-sobremim div.empresas{
+section div.empresas{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     align-items: center;
 }
-section.texto-sobremim div.empresas div{
+section div.empresas div{
     max-width: 140px;
     height: 80px;
     display: flex;
@@ -204,10 +206,10 @@ section.texto-sobremim div.empresas div{
     padding: 10px;
 }
 
-section.texto-sobremim div.empresas div:first-child img{
+section div.empresas div:first-child img{
     width: 120%;
 }
-section.texto-sobremim div.empresas img{
+section div.empresas img{
     object-fit: contain;
     width: 100%;
 }
