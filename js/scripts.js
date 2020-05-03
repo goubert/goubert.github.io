@@ -32,9 +32,11 @@ $(function(){
 $(window).scroll(function(){
   if ($(window).scrollTop() >= 100) {
       $('header').addClass('fixed-header');
+      $('header ul').addClass('fixed-menu');
   }
   else {
       $('header').removeClass('fixed-header');
+      $('header ul').addClass('fixed-menu');
   }
 });
 

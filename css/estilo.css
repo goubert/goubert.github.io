@@ -119,15 +119,65 @@ header{
     flex-direction: row;
 }
 
+header ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+    margin: 10px 10px;
+    margin: 0px;
+    justify-content: flex-end;
+    /* flex-wrap: wrap; */
+    padding: 5px 0px;
+    animation: slideInDown 300ms ease-in-out;
+}
+header ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px 0 0;
+}
+header ul li:last-child{
+    margin-right: 0;
+}
+header ul li a{
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #D4D4D4;
+    position: relative;
+    transition: all 250ms ease-in-out;
+}
+header ul li a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: -6px;
+    left: 0;
+    background: #0665ef;
+    transition: all 250ms ease-in-out;
+}
+
+header ul li a:hover , header ul li a:hover::after{
+    width: 100%;
+    transition: all 250ms ease-in-out;
+    color: #0665ef;
+}
+
 .fixed-header{
     position: fixed;
     top: 0;
     left: 0;
     height: 31px;
     padding: 20px;
-    width: 100%; 
+    width: calc(100% - 40px);; 
     background: #fff;
     animation: slideInDown 300ms;
+    z-index: 99;
+}
+
+.fixed-menu{
+   
 }
 header img{
     align-self: center;
@@ -370,12 +420,74 @@ footer .email a{
 }
 
 
+section .box-projeto{
+    background: #333;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: all 350ms ease-in-out;
+    margin: 20px 0;
+    overflow: hidden;
+}
 
+section .box-projeto.sgp{
+    background: #2E6DFF;
+}
+
+section .box-projeto.moodle{
+    background: #F5B13C;
+}
+
+section .box-projeto.cocacola{
+    background: #D41020;
+}
+
+section .box-projeto.edooc{
+    background: #53B9E9;
+}
+
+section .box-projeto.restaurante{
+    background: #B11A56;
+}
+
+section .box-projeto.musicaapp{
+    background: rgb(14, 226, 127);
+}
+
+
+
+section .box-projeto h2{
+    color: #fff;
+    align-self: flex-start;
+    width: 50%;
+    margin: 20px 20px;
+}
+
+section .box-projeto svg.arow-projeto{
+    fill: #fff;
+    width: 30px;
+    height: 20px;
+    margin: 40px 61px;
+    transition: all 350ms ease-in-out;
+}
+section .box-projeto:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 350ms ease-in-out;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+section .box-projeto:hover svg.arow-projeto{
+    transition: all 350ms ease-in-out;
+    transform: translateX(10px);
+}
  
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
     .main-wrap{
         width: 960px;
         height: calc(100vh - 60px);
