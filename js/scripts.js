@@ -47,3 +47,16 @@ function navHighlighter() {
     }
   });
 }
+
+$('.menu-mobile').on('click', function(event) {
+  event.preventDefault();
+  $(this).toggleClass('act');
+  $('.menu-mobile-modal').slideToggle("fast");
+  
+});
+
+$('.btn-modal').on('click', function(event){
+  event.preventDefault();
+  $('.menu-mobile-modal').slideToggle("fast");
+})
+

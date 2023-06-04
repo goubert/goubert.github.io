@@ -12,7 +12,7 @@
 
   gtag('config', 'G-2S9P526NQH');
 </script>
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <title>Goubert - Designer de produtos digitais</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/estilo.css">
@@ -24,18 +24,34 @@
 </head>
 
 <body data-barba="wrapper">
-    
-    <header id="header">
+
+    <div class="menu-mobile-modal" id="#modal-menu">
+        <a href="" class="close"></a>
         <img src="img/logo.svg" alt="">
-        <ul class="main-menu">
+        <ul class="main-menu-modal">
             <li><a href="#inicio">Inicial</a></li>
             <li><a href="#trabalhos">Trabalhos</a></li>
             <li><a href="#meusprocessos">Processo</a></li>
             <li><a href="#techandtools">Tech and Tools</a></li>
             <li><a href="#historicoprofissional">Histórico profissional</a></li>
         </ul>
+        <div class="buttons-top-modal">
+            <a href="https://www.goubert.com.br/curriculo-goubert-2023.pdf" download target="_blank" class="curriculo">Currículo</a>
+            <a href="https://www.linkedin.com/in/goubertrodrigues/" target="_blank" class="linkedin">Linkedin</a>
+        </div>
+    </div>
+    
+    <header id="header">
+        <img src="img/logo.svg" alt="">
+        <ul class="main-menu">
+            <li><a href="#inicio" class="btn-modal">Inicial</a></li>
+            <li><a href="#trabalhos" class="btn-modal">Trabalhos</a></li>
+            <li><a href="#meusprocessos" class="btn-modal">Processo</a></li>
+            <li><a href="#techandtools" class="btn-modal">Tech and Tools</a></li>
+            <li><a href="#historicoprofissional" class="btn-modal">Histórico profissional</a></li>
+        </ul>
         <div class="buttons-top">
-            <a href="https://www.goubert.com.br/curriculo-goubert-2023.pdf" target="_blank" class="curriculo">Currículo</a>
+            <a href="https://www.goubert.com.br/curriculo-goubert-2023.pdf" download target="_blank" class="curriculo">Currículo</a>
             <a href="https://www.linkedin.com/in/goubertrodrigues/" target="_blank" class="linkedin">Linkedin</a>
         </div>
         <a href="" class="menu-mobile"></a>
@@ -315,6 +331,12 @@
         <a href="https://twitter.com/goubert" target="_blank">Twitter</a>
     </div>
 </footer>
+
+
+
+
+
     <script type="text/javascript" src="js/scripts.js"></script>
+    
 </body>
 </html>

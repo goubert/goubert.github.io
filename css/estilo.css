@@ -89,6 +89,10 @@ header a.menu-mobile{
     display: none;
 }
 
+.menu-mobile-modal{
+   display: none;
+}
+
 
 .buttons-top{
     display: flex;
@@ -344,6 +348,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 footer div{
@@ -416,6 +421,88 @@ footer div a , footer div span{
     header a.menu-mobile{
         display: block;
     }
+
+    .menu-mobile-modal{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(6, 101, 239, 0.5);
+        padding: 24px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(40px);
+        z-index: 99;
+        display: none;
+    }
+
+    
+
+   
+
+    .menu-mobile-modal .main-menu-modal{
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        margin-top: 60px;
+    }
+
+    .main-menu-modal li a{
+        font-size: 2.2rem;
+        color: #fff;
+        font-weight: 700;
+        transition: all 150ms ease-in;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .buttons-top-modal{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 16px;
+        margin-top:60px ;
+    }
+
+
+    .buttons-top-modal a{
+        color: #fff;
+        padding: 10px 16px;
+        font-size: 1.8rem;
+        position: relative;
+        padding: 8px 16px 8px 40px;
+        border-radius: 26px;
+        transition: all 150ms ease-in;
+    }
+
+    .buttons-top-modal a::before{
+        content: "";
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 12px;
+        top: 15px;
+        background-repeat: no-repeat;
+
+    }
+
+    .buttons-top-modal a.curriculo::before{
+        background: url('../img/anexo-icon.svg') no-repeat;
+    }
+
+    .buttons-top-modal a.linkedin::before{
+        background: url('../img/linkedin-icon.svg') no-repeat;
+    }
+
+    .menu-mobile-modal .close{
+        background: url('../img/close.svg') no-repeat;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+    }
+
 
 }
 
