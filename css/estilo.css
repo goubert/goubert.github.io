@@ -59,6 +59,14 @@ header ul.main-menu li a.active::after{
     width: 100%;
 }
 
+header a.menu-mobile{
+    background: url('../img/menu-hamb.svg') no-repeat;
+    padding: 8px;
+    width: 30px;
+    height: 28px;
+    display: none;
+}
+
 
 .buttons-top{
     display: flex;
@@ -348,6 +356,14 @@ section.hero .main-text h6 {
 
     header ul.main-menu{
         display: none;
+    }
+
+    header .buttons-top{
+        display: none;
+    }
+
+    header a.menu-mobile{
+        display: block;
     }
 
 
