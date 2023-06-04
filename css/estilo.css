@@ -100,7 +100,40 @@ header ul.main-menu li a.active::after{
 }
 
 section{
-    margin: 40px auto;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1400px;
+}
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.section-title h1{
+    color: #0665EF;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+.section-title p{
+    font-size: 1rem;
+    color: #B1B1B1;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-title p strong{
+    color: #fff;
 }
 
 section.hero{
@@ -137,3 +170,155 @@ section.hero .main-text h6 {
     line-height: 2rem;
 }
 
+
+.processos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.processos div.card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #1D1D1D;
+    width: 100%;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.processos div.card p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.processos div.card .title-process{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.processos div.card .title-process img{
+    width: 100px;
+}
+
+.processos div.card .title-process h3{
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.processos div.card ul.topics{
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 16px;
+}
+
+.processos div.card ul.topics li{
+    list-style: circle;
+    line-height: 1.8rem;
+}
+
+
+.tools-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+}
+
+.tools-grid .tool-card{
+    background: #1D1D1D;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 170px;
+    border-radius: 24px;
+}
+
+.tools-grid .tool-card .title-tool{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.tools-grid .tool-card .title-tool h6{
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.tools-grid .tool-card .title-tool img{
+    height: 34px;
+}
+
+.tools-grid .tool-card p{
+    width: 100%;
+    align-self: baseline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px)
+{
+
+    .processos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .processos div.card .title-process{
+        display: flex;
+        flex-direction: row;
+        justify-self: space-between;
+        align-items: center;
+        height: 150px;
+    }
+    .processos div.card .title-process h3{
+        text-align: left;
+        width: 50%;
+    }
+    .processos div.card .title-process img{
+        align-self: center;
+        height: 90px;
+        width: fit-content;
+    }
+
+   
+}
+
+
+
+
+@media (max-width: 800px)
+{
+    .processos{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .tools-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 24px;
+    }
+
+
+}
