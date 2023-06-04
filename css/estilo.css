@@ -393,6 +393,10 @@ footer div a , footer div span{
         margin-top: 20px
     }
 
+    section .section-title h1{
+        font-size: 2rem;
+    }
+
     section.hero .main-text h3{
         font-size: 2.4rem;
     }
@@ -438,6 +442,11 @@ footer div a , footer div span{
     footer{
         flex-direction: column;
         gap: 32px;
+    }
+
+    footer div , footer div a , footer div span{
+        text-align: center;
+        margin: 0 auto;
     }
 
 
