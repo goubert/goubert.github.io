@@ -308,6 +308,27 @@ section.hero .main-text h6 {
 
 @media (max-width: 800px)
 {
+
+    body{
+        padding: 24px;
+    }
+
+    section.hero{
+        margin-top: 20px
+    }
+
+    section.hero .main-text h3{
+        font-size: 2.4rem;
+    }
+
+    section.hero .main-text h3 a{
+        font-size: 2.4rem;
+    }
+
+    section.hero .main-text h6{
+        font-size: 1.4rem;
+    }
+
     .processos{
         display: grid;
         grid-template-columns: 1fr;
@@ -318,6 +339,15 @@ section.hero .main-text h6 {
         display: grid;
         grid-template-columns: 1fr 1fr ;
         gap: 24px;
+    }
+
+    .tools-grid .tool-card{
+        width: 100%;
+        height: auto;
+    }
+
+    header ul.main-menu{
+        display: none;
     }
 
 
