@@ -435,5 +435,9 @@ footer div a , footer div span{
         display: block;
     }
 
+    footer{
+        flex-direction: column;
+    }
+
 
 }
