@@ -437,6 +437,7 @@ footer div a , footer div span{
 
     footer{
         flex-direction: column;
+        gap: 32px;
     }
 
 
