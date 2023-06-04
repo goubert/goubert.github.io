@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+a {
+    cursor: pointer;
+}
+
 body{
     background: #0D0D0D;
     color: #B1B1B1;
@@ -21,10 +25,22 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
 }
 
 header img{
     width: 140px;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 24px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(40px);
 }
 
 header ul.main-menu{
@@ -39,6 +55,7 @@ header ul.main-menu li a{
     font-weight: 700;
     transition: all 150ms ease-in;
     position: relative;
+    cursor: pointer;
 }
 
 header ul.main-menu li a:hover{
@@ -379,6 +396,22 @@ footer div a , footer div span{
    
 }
 
+@media (max-width: 1000px)
+{
+
+    header ul.main-menu{
+        display: none;
+    }
+
+    header .buttons-top{
+        
+    }
+
+    header a.menu-mobile{
+        display: block;
+    }
+
+}
 
 
 
