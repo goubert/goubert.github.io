@@ -469,6 +469,30 @@ footer div a , footer div span{
 
 
 
+  
+  #box {
+    height: 200px;
+    width: 200px;
+    background-color: cornflowerblue;
+    margin: 1000px auto 100px;
+  }
+  
+  .animate {
+    animation: animate .3s ease-in-out forwards;
+  }
+  
+  @keyframes animate {
+    from {
+      background-color: cornflowerblue;
+      border-radius: 0;
+    }
+    to {
+      background-color: green;
+      border-radius: 100px;
+    }
+  }
+
+
 
 
 
@@ -616,7 +640,7 @@ footer div a , footer div span{
     }
 
     section .section-title h1{
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 
     section.hero .main-text h3{
