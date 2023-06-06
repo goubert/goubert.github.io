@@ -390,6 +390,12 @@ section.hero .main-text h6 {
         color: #8C8C8C;
     }
 
+    .job .infojob h6{
+        font-size: 1.1rem;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
 .job .galleryjob{
     width: 70%;
     display: grid;
