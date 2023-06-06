@@ -30,7 +30,6 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
 }
 
 header img{
@@ -40,12 +39,13 @@ header img{
 .sticky {
     position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.7);
     padding: 24px;
     margin: 0;
     top: 0;
     left: 0;
     backdrop-filter: blur(40px);
+    z-index: 99;
 }
 
 header ul.main-menu{
@@ -145,15 +145,15 @@ section{
 .section-title{
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    max-width: 690px;
+    gap: 8px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .section-title h1{
     color: #0665EF;
-    font-weight: 900;
-    font-size: 3rem;
+    font-weight: 700;
+    font-size: 3.5rem;
     margin: 0 auto;
     display: block;
     width: auto;
@@ -161,14 +161,16 @@ section{
 }
 
 .section-title p{
-    font-size: 1rem;
-    color: #B1B1B1;
-    font-weight: 400;
+    font-size: 1.5rem;
+    color: #7b7b7b;
+    font-weight: 200;
     text-align: center;
 }
 
 .section-title p strong{
     color: #fff;
+    font-weight: 200;
+    font-size: 1.5rem;
 }
 
 section.hero{
@@ -183,26 +185,29 @@ section.hero .main-text{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 600px;
+    width: 680px;
 }
 
 section.hero .main-text h3 {
     color: #B1B1B1;
-    font-size: 3rem;
+    font-weight: 700;
+    font-size: 3.5rem;
 }
 
 section.hero .main-text h3 a{
     color: #B1B1B1;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-decoration: underline;
     color: #0665EF;
+
+    font-weight: 700;
 }
 
 section.hero .main-text h6 {
-    color: #B1B1B1;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 2rem;
+    color: #6f6f6f;
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 2.5rem;
 }
 
 
@@ -343,9 +348,103 @@ section.hero .main-text h6 {
     line-height: 1.8rem;
 }
 
+.jobs-list{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    width: 100%;
+}
+
+.job{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+    height: 80vh;
+}
+
+.job .infojob{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 30%;
+    background: #1D1D1D;
+    border-radius: 24px;
+    height: 100%;
+    flex-grow: 3;
+    padding: 24px;
+}
+
+    .job .infojob img{
+        width: 100px;
+    }
+
+    .job .infojob h4.titlejob{
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .job .infojob p.descriptionjob{
+        font-size: 1.1rem;
+        color: #8C8C8C;
+    }
+
+.job .galleryjob{
+    width: 70%;
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'img1 img1 img1 img1'
+        'img2 img3 img4 img5';
+    gap: 24px;
+    justify-items: center;
+}
+
+.job .galleryjob div{
+    
+}
+
+.job .galleryjob div img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+}
+  
+    .job .galleryjob .img1 { 
+        width: 100%;
+        grid-area: img1;
+        height: 100%;
+        min-height: fit-content;
+    }
+  
+    .job .galleryjob .img2 { 
+        width: 100%;
+        grid-area: img2;
+    }
+    
+    .job .galleryjob .img3 { 
+        width: 100%;
+        grid-area: img3;
+     }
+    
+    .job .galleryjob .img4 { 
+        width: 100%;
+        grid-area: img4;
+     }
+    
+    .job .galleryjob .img5 { 
+        width: 100%;
+        grid-area: img5;
+     }
+    
+
 footer{
     max-width: 1400px;
     display: flex;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 100px;
@@ -436,9 +535,6 @@ footer div a , footer div span{
         display: none;
     }
 
-    
-
-   
 
     .menu-mobile-modal .main-menu-modal{
         display: flex;
@@ -573,6 +669,22 @@ footer div a , footer div span{
     footer div , footer div a , footer div span{
         text-align: center;
         margin: 0 auto;
+    }
+
+    .job{
+        
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .job .infojob{
+        width: 100%;
+    }
+
+    .job .galleryjob{
+        width: 100%;
+        gap: 16px;
     }
 
 

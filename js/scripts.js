@@ -47,7 +47,7 @@ function navHighlighter() {
     }
   });
 }
-
+/*
 $('.menu-mobile').on('click', function(event) {
   event.preventDefault();
   $(this).toggleClass('act');
@@ -60,3 +60,16 @@ $('.btn-modal').on('click', function(event){
   $('.menu-mobile-modal').slideToggle("fast");
 })
 
+
+
+anime({
+  targets: '.main-text',
+  translateX: 250
+});*/
+
+
+
+
+lightbox.option({
+  'disableScrolling' : false,
+});
