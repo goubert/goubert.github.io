@@ -10,26 +10,34 @@
     text-decoration: none;
 }
 
+body{
+    background: #0D0D0D url('../img/bg.jpg') no-repeat;
+    color: #B1B1B1;
+    padding: 48px;
+    width: 100%;
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
 a {
     cursor: pointer;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    background: #0D0D0D;
-    color: #B1B1B1;
-    padding: 48px;
-    
-}
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 header img{
@@ -52,6 +60,10 @@ header ul.main-menu{
     display:flex;
     flex-direction: row;
     gap: 24px;
+}
+
+header ul.main-menu-mobile{
+    display: none;
 }
 
 header ul.main-menu li a{
@@ -189,13 +201,13 @@ section.hero .main-text{
 }
 
 section.hero .main-text h3 {
-    color: #B1B1B1;
+    color: #ffffff;
     font-weight: 700;
     font-size: 3.5rem;
 }
 
 section.hero .main-text h3 a{
-    color: #B1B1B1;
+    
     font-size: 3.5rem;
     text-decoration: underline;
     color: #0665EF;
@@ -204,7 +216,7 @@ section.hero .main-text h3 a{
 }
 
 section.hero .main-text h6 {
-    color: #6f6f6f;
+    color: #0665EF;
     font-size: 1.8rem;
     font-weight: 200;
     line-height: 2.5rem;
@@ -538,17 +550,38 @@ footer div a , footer div span{
 
 @media (max-width: 1000px)
 {
+    body{
+        padding: 24px;
+    }
+
+    header{
+        gap: 16px;
+    }
+
+    
+
+    header ul.main-menu-mobile{
+        display:flex;
+        flex-direction: row;
+        gap: 24px;
+    }
 
     header ul.main-menu{
         display: none;
     }
+    
+    
 
     header .buttons-top{
-        
+        display: none;
     }
 
     header a.menu-mobile{
         display: block;
+    }
+
+    header img {
+        width: 130px;
     }
 
     .menu-mobile-modal{
@@ -645,6 +678,8 @@ footer div a , footer div span{
         padding: 24px;
     }
 
+    header ul.main-menu{display: none;}
+
     section.hero{
         margin-top: 20px
     }
@@ -684,7 +719,17 @@ footer div a , footer div span{
     }
 
     header ul.main-menu{
-        display: none;
+       gap: 16px;
+       align-items: center;
+    }
+
+    header ul.main-menu li{
+        text-align: center;
+    }
+
+    header ul.main-menu li a{
+        font-size: 0.8rem;
+        text-align: center;
     }
 
     header .buttons-top{
