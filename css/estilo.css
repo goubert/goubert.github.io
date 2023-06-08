@@ -79,6 +79,7 @@ header ul.main-menu li a:hover{
     color: #fff;
 }
 
+
 header ul.main-menu li a.active{
     color: #fff;
     padding-bottom: 12px;
@@ -216,7 +217,7 @@ section.hero .main-text h3 a{
 }
 
 section.hero .main-text h6 {
-    color: #0665EF;
+    color: #dddddd;
     font-size: 1.8rem;
     font-weight: 200;
     line-height: 2.5rem;
@@ -594,8 +595,12 @@ footer div a , footer div span{
         top: 0;
         left: 0;
         backdrop-filter: blur(40px);
-        z-index: 99;
+        z-index: 999;
         display: none;
+    }
+
+    .menu-mobile-modal.active{
+        display: block;
     }
 
 

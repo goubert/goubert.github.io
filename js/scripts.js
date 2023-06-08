@@ -47,7 +47,9 @@ function navHighlighter() {
     }
   });
 }
-/*
+
+
+
 $('.menu-mobile').on('click', function(event) {
   event.preventDefault();
   $(this).toggleClass('act');
@@ -55,17 +57,19 @@ $('.menu-mobile').on('click', function(event) {
   
 });
 
-$('.btn-modal').on('click', function(event){
+
+
+$('.close').on('click', function(event){
   event.preventDefault();
+  $('.menu-mobile-modal').slideToggle("fast");
+})
+
+$('.main-menu-modal li a').on('click', function(event){
   $('.menu-mobile-modal').slideToggle("fast");
 })
 
 
 
-anime({
-  targets: '.main-text',
-  translateX: 250
-});*/
 
 
 
