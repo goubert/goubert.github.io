@@ -692,12 +692,15 @@ footer div a , footer div span{
     header ul.main-menu{display: none;}
 
     section.hero{
-        margin-top: 20px
+        margin-top: 20px;
         background-position: center center;
+        padding: 24px;
     }
 
     
-
+    section.hero .main-text{
+        align-self: self-end;
+    }
     section .section-title h1{
         font-size: 2.8rem;
     }
