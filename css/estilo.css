@@ -190,8 +190,13 @@ section.hero{
     height: calc(100vh - 140px);
     display: flex;
     flex-direction: row;
+    max-width: 100%;
     gap: 40px;
+    padding: 24px 80px;
     align-items: center;
+    background: rgba(44, 44, 44, 0.598) url('https://media.giphy.com/media/MZWl5nSA0EM00/giphy.gif');
+    border-radius: 24px;
+    background-size: cover;
 }
 
 section.hero .main-text{
@@ -647,11 +652,12 @@ footer div a , footer div span{
         left: 12px;
         top: 15px;
         background-repeat: no-repeat;
-
+        
     }
 
     .buttons-top-modal a.curriculo::before{
         background: url('../img/anexo-icon.svg') no-repeat;
+        
     }
 
     .buttons-top-modal a.linkedin::before{
